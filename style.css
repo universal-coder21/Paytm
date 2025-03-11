@@ -1,0 +1,412 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+main{
+    background-color: #e8f8fd;
+
+}
+
+header {
+    width: 100%;
+    box-shadow: 0 5px 20px rgba(0, 41, 112, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+/* Style for the nav bar */
+nav {
+    background-color: #fff;
+    /* You can change this to match your design */
+    padding: 13px 18px;
+    max-width: 1212px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+li {
+    margin-right: 20px;
+    /* Adds space between each menu item */
+}
+
+/* Icon styling */
+.iconss {
+    font-size: 12px;
+    /* Controls the size of the chevron icon */
+    margin-left: 2px;
+    /* Adds space between the text and the icon */
+    vertical-align: middle;
+    /* Centers the icon vertically with text */
+}
+
+li a {
+    cursor: pointer;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    font-style: normal;
+}
+
+nav ul li:last-child {
+    min-width: 90px;
+    max-width: 115px;
+    display: flex;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+    gap: 6px;
+    align-items: center;
+    padding: 2px 15px 2px 2px;
+    color: white;
+    background-color: #002970;
+    border-radius: 18px;
+}
+
+/* Optional: Add hover effects to menu items */
+nav .dropdown-content {
+    display: none;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    min-width: 139px;
+    padding: 30px;
+    top: 76px;
+    border-radius: 8px;
+    background-color: wheat;
+}
+
+/* section-1 */
+
+#section-1 {
+    width: 1212px;
+    margin: 0 auto;
+    /* background-color: red; */
+    padding: 16px 0;
+
+
+    min-height: 250px;
+    /* background-color: green; */
+
+}
+#section-2{
+    width: 1212px;
+    margin: 0 auto;
+    /* background-color: red; */
+    padding: 16px 0;
+
+
+}
+.nav {
+    display: flex;
+    height: 36px;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+#section-1 .first-div-section-1 ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+
+.section-1-img1 {
+    width: 140px;
+    height: 21px;
+}
+
+
+.section-1-iconss {
+    margin-bottom: 4px;
+    font-size: 24px;
+
+    vertical-align: middle;
+    /* Centers the icon vertically with text */
+}
+
+#Train {
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 4px;
+
+}
+
+#section-1 ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+
+}
+
+
+#section-1 .first-div-section-1 ul li a.active {
+    border-bottom: 2px solid blue;
+}
+
+.travelDetails {
+    height: 200px;
+
+
+}
+
+.travelDetails .box {
+    height: 100%;
+    padding: 20px 0 16px 20px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    margin-top: 8px;
+    border-radius: 8px;
+
+
+}
+
+.choice {
+    display: flex;
+    /* Align radio buttons and labels horizontally */
+    align-items: center;
+    /* Align items vertically centered */
+    gap: 15px;
+    margin-bottom: 12px;
+    /* Space between the radio buttons */
+}
+
+.choice input[type="radio"] {
+    height: 20px;
+    /* Set radio button size */
+    width: 20px;
+    /* Set radio button size */
+}
+
+.destination {
+    display: flex;
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 12px;
+    cursor: pointer;
+    height: 52px;
+    /* align-items: flex-end; */
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.small-txt {
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #7e7e7e;
+
+}
+
+.Form-to,
+.departAndReturn {
+    padding-right: 15px;
+    border-right: 1px solid #cacaca;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+.from,
+.to {
+    font-size: 16px;
+
+    font-weight: 400;
+    width: 182px;
+}
+
+.Bold {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 0;
+    font-size: 18px;
+}
+
+.blue-text {
+    color: #00baf2;
+    ;
+}
+
+.search {
+    padding-right: 20px;
+}
+
+.Submit {
+    background: #00baf2;
+    color: #fff;
+    font-size: 16px;
+    height: 52px;
+    width: 154px;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.information {
+    padding-top: 10px;
+    height: 62px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.information .info-contents {
+    display: flex;
+    align-items: center;
+}
+
+.info-first-box1 {
+    display: block;
+    margin-right: 5px;
+}
+
+.upper {
+    padding-right: 12px;
+    font-size: 14px;
+    /* color: hsla(0, 0%, 6%, .54);
+     */
+    color: black;
+    font-weight: 600;
+    line-height: 16px;
+
+}
+
+.info-first-box2 {
+    border: 1px solid hsla(0, 0%, 6%, .13);
+    padding: 7px 12px;
+    border-radius: 8px;
+    margin: 0 8px 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    color: hsla(0, 0%, 6%, .54);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.img-advertise {
+    width: 376px;
+    height: 125px;
+}
+
+.imgcontainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* justify-content: space-around; */
+}
+
+#section-3 {
+    width: 1212px;
+    margin: 0 auto;
+    padding: 16px 0;
+    /* Remove background-color: red; for production */
+}
+
+.section-3-cards-holder {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cards {
+    min-height: 280px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.rechgarge-img {
+    width: 48px;
+    height: 48px;
+}
+
+.cards-inside {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.cards-inside a {
+    flex: 1;
+    text-decoration: none;
+    color: #000;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cards-inside a:hover{
+    /* background-color: #f5f5f5; */
+    transform: scale(1.2);
+    box-shadow: 0 15.96px 53.83px 0 rgba(184, 185, 228, .4), 1px 1px 0 0 #fff;
+    cursor: pointer;
+
+}
+
+.cards-inside a span {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.cont {
+    margin-top: 15px;
+}
+
+.cont-images {
+    width: 100%;
+    border-radius: 8px;
+}
